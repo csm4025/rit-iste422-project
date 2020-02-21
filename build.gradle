@@ -1,0 +1,23 @@
+/* 
+	Compile java
+	Run tests
+*/
+
+apply plugin: 'java'
+
+dependencies {
+	compile fileTree(dir: 'lib', include: ['*.jar'])
+}
+
+sourceSets {
+	main {
+		java {
+			srcDir 'src/java'
+		}
+	}
+	test {
+		java {
+			srcDir 'test/java'
+		}
+	}
+}
